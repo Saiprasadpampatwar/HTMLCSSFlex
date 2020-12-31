@@ -26,7 +26,7 @@ const pwd = document.querySelector("#pwd");
 const pwdError = document.querySelector(".pwd-error");
 pwd.addEventListener("input", function () {
     let passwordRegex = RegExp(
-        ".{8,}"
+        "^(?=.*\\d)(?=.*[A-Z])(?=.*\\W)(?!.*\\W\\w*\\W)(?!.*\\s).{8,}$"
     );
     if (passwordRegex.test(pwd.value)) pwdError.textContent = "";
     else pwdError.textContent = "Password is Incorrect";
