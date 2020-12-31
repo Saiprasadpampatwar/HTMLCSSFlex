@@ -31,3 +31,9 @@ pwd.addEventListener("input", function () {
     if (passwordRegex.test(pwd.value)) pwdError.textContent = "";
     else pwdError.textContent = "Password is Incorrect";
 });
+
+const salary = document.querySelector("#salary");
+const output = document.querySelector(".salary-output");
+salary.addEventListener("input", function () {
+    output.textContent = salary.value;
+});
