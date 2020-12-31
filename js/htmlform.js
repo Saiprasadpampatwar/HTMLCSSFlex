@@ -21,3 +21,13 @@ tel.addEventListener("input",function(){
     if(telRegex.test(tel.value)) telError.textContent="";
     else telError.textContent = "Telephone is Incorrect";
 })
+
+const pwd = document.querySelector("#pwd");
+const pwdError = document.querySelector(".pwd-error");
+pwd.addEventListener("input", function () {
+    let passwordRegex = RegExp(
+        ".{8,}"
+    );
+    if (passwordRegex.test(pwd.value)) pwdError.textContent = "";
+    else pwdError.textContent = "Password is Incorrect";
+});
