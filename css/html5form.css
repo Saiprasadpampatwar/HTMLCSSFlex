@@ -54,3 +54,25 @@ button {
     font-style: italic;
     color: red;
 }
+
+@media only screen and (max-width: 360px) {
+    h1 {
+      font-size: 40px;
+      text-align: center;
+    }
+    label {
+      width: 40%;
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+    label {
+      width: 50%;
+      font-size: 25px;
+    }
+  }
