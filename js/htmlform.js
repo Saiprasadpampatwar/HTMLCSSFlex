@@ -13,3 +13,11 @@ email.addEventListener("input",function(){
     if(emailRegex.test(email.value)) emailError.textContent="";
     else emailError.textContent = "Email is Incorrect";
 });
+
+const tel = document.querySelector("#tel");
+const telError = document.querySelector(".tel-error");
+tel.addEventListener("input",function(){
+    let telRegex = RegExp("(([0-9]{2})?)[ ][0-9]{10}");
+    if(telRegex.test(tel.value)) telError.textContent="";
+    else telError.textContent = "Telephone is Incorrect";
+})
